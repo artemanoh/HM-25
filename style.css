@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.cubes-list {
+    position: relative;
+    width: 400px;
+    height: 400px;
+
+}
+
+
+.cubes-item {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+}
+
+.cubes-item:first-child {
+    background-color: red;
+    top: 0;
+    left: 0;
+
+}
+
+.cubes-item:nth-child(2) {
+    background-color: blue;
+    z-index: 1;
+    top: 110px;
+    left: 110px;
+}
+
+.cubes-item:last-child {
+    background-color: green;
+    right: 0;
+    bottom: 0;
+}
